@@ -1,0 +1,31 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int long long n,i,d,s,nr=0,y;
+    while(cin>>n&&n!=0)
+    {
+        if(n!=1)
+        {
+        s=1;
+        for(d=2;d*d<n;d++)
+        {
+            if(n%d==0)
+            {
+                s+=d;
+                s+=n/d;
+            }
+        }
+        if(s==n)
+        {
+            nr++;
+        }
+        }
+    }
+    
+    cout<<nr;
+    
+    return 0;
+}
