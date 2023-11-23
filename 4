@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    int n,ok=1,i,d,nr=0,y;
+    while(cin>>n&&n!=0)
+    {
+    
+        ok=1;
+	    for(d=2;d*d<=n;d++)
+        {
+	    if(n%d==0)
+        {
+		    ok=0;
+        }
+    }
+    if(ok==1)
+    {
+		nr++;
+    }
+
+
+    }
+    cout<<nr;
+}
